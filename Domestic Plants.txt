@@ -1,0 +1,256 @@
+Domestic Plants  
+├── Houseplants  
+│   ├── Foliage Plants  
+│   │   ├── Spider Plant  
+│   │   │   ├── Sunlight: Indirect light  
+│   │   │   ├── Water: Once a week  
+│   │   │   ├── Humidity: Moderate to high  
+│   │   ├── Monstera  
+│   │       ├── Sunlight: Bright, indirect light  
+│   │       ├── Water: Every 1–2 weeks  
+│   │       ├── Humidity: High  
+│   ├── Flowering Plants  
+│   │   ├── Peace Lily  
+│   │   │   ├── Sunlight: Low to medium light  
+│   │   │   ├── Water: Once a week (keep soil moist)  
+│   │   │   ├── Humidity: High  
+│   │   ├── Anthurium  
+│   │       ├── Sunlight: Indirect light  
+│   │       ├── Water: Once a week  
+│   │       ├── Humidity: High  
+│   ├── Succulents and Cacti  
+│   │   ├── Aloe Vera  
+│   │   │   ├── Sunlight: Direct sunlight  
+│   │   │   ├── Water: Once every 2–3 weeks  
+│   │   │   ├── Humidity: Low  
+│   │   ├── Jade Plant  
+│   │       ├── Sunlight: Bright, indirect light  
+│   │       ├── Water: Once every 2 weeks  
+│   │       ├── Humidity: Low  
+│   ├── Air Purifying Plants  
+│       ├── Areca Palm  
+│       │   ├── Sunlight: Indirect light  
+│       │   ├── Water: Twice a week  
+│       │   ├── Humidity: High  
+│       ├── Snake Plant  
+│           ├── Sunlight: Low to bright light  
+│           ├── Water: Once every 2–3 weeks  
+│           ├── Humidity: Low  
+├── Garden Plants  
+│   ├── Flowering Plants  
+│   │   ├── Rose  
+│   │   │   ├── Sunlight: Full sunlight  
+│   │   │   ├── Water: Every 2–3 days  
+│   │   │   ├── Humidity: Moderate  
+│   │   ├── Hibiscus  
+│   │       ├── Sunlight: Full sunlight  
+│   │       ├── Water: Daily (in hot weather)  
+│   │       ├── Humidity: Moderate to high  
+│   ├── Herbs and Aromatic Plants  
+│   │   ├── Mint  
+│   │   │   ├── Sunlight: Partial sunlight  
+│   │   │   ├── Water: Every 2 days  
+│   │   │   ├── Humidity: High  
+│   │   ├── Basil  
+│   │       ├── Sunlight: Full sunlight  
+│   │       ├── Water: Daily  
+│   │       ├── Humidity: Moderate  
+│   ├── Ornamental Shrubs  
+│       ├── Boxwood  
+│       │   ├── Sunlight: Partial to full sunlight  
+│       │   ├── Water: Weekly  
+│       │   ├── Humidity: Low to moderate  
+│       ├── Hydrangea  
+│           ├── Sunlight: Morning sunlight, afternoon shade  
+│           ├── Water: Every 2–3 days  
+│           ├── Humidity: Moderate to high  
+├── Medicinal Plants  
+│   ├── Herbal Medicinal Plants  
+│   │   ├── Tulsi  
+│   │   │   ├── Sunlight: Full sunlight  
+│   │   │   ├── Water: Every 1–2 days  
+│   │   │   ├── Humidity: Moderate  
+│   │   ├── Chamomile  
+│   │       ├── Sunlight: Full sunlight  
+│   │       ├── Water: Weekly  
+│   │       ├── Humidity: Low  
+│   ├── Ayurvedic Medicinal Plants  
+│       ├── Neem  
+│       │   ├── Sunlight: Full sunlight  
+│       │   ├── Water: Weekly  
+│       │   ├── Humidity: Low  
+│       ├── Ashwagandha  
+│           ├── Sunlight: Full sunlight  
+│           ├── Water: Every 2 weeks  
+│           ├── Humidity: Low  
+├── Farm Crops  
+    ├── Cereal Crops  
+    │   ├── Rice  
+    │   │   ├── Sunlight: Full sunlight  
+    │   │   ├── Water: Constant waterlogged soil  
+    │   │   ├── Humidity: High  
+    │   ├── Wheat  
+    │       ├── Sunlight: Full sunlight  
+    │       ├── Water: Every 10–14 days  
+    │       ├── Humidity: Low to moderate  
+    ├── Vegetable Crops  
+    │   ├── Tomato  
+    │   │   ├── Sunlight: Full sunlight  
+    │   │   ├── Water: Every 2–3 days  
+    │   │   ├── Humidity: Moderate  
+    │   ├── Carrot  
+    │       ├── Sunlight: Full sunlight  
+    │       ├── Water: Weekly  
+    │       ├── Humidity: Low  
+    ├── Fruit Crops  
+        ├── Mango  
+        │   ├── Sunlight: Full sunlight  
+        │   ├── Water: Weekly (during flowering and fruiting)  
+        │   ├── Humidity: Moderate  
+        ├── Banana  
+            ├── Sunlight: Full sunlight  
+            ├── Water: Weekly  
+            ├── Humidity: High  
+
+
+Wild Plants  
+├── Forest Plants  
+│   ├── Trees  
+│   │   ├── Oak  
+│   │   │   ├── Sunlight: Partial to full  
+│   │   │   ├── Water: Seasonal rains  
+│   │   │   ├── Humidity: High in dense forests  
+│   │   ├── Redwood  
+│   │       ├── Sunlight: Partial  
+│   │       ├── Water: Heavy seasonal rains  
+│   │       ├── Humidity: High  
+│   ├── Shrubs  
+│       ├── Hazelnut  
+│       │   ├── Sunlight: Partial  
+│       │   ├── Water: Moderate seasonal rains  
+│       │   ├── Humidity: High  
+│       ├── Elderberry  
+│           ├── Sunlight: Partial to full  
+│           ├── Water: Moderate rainfall  
+│           ├── Humidity: High  
+├── Grassland Plants  
+│   ├── Tall Grasses  
+│   │   ├── Switchgrass  
+│   │   │   ├── Sunlight: Full sunlight  
+│   │   │   ├── Water: Minimal to moderate  
+│   │   │   ├── Humidity: Low to moderate  
+│   ├── Ground Cover  
+│       ├── Clover  
+│       │   ├── Sunlight: Full sunlight  
+│       │   ├── Water: Moderate rainfall  
+│       │   ├── Humidity: Low  
+├── Wetland Plants  
+│   ├── Aquatic Plants  
+│   │   ├── Water Lily  
+│   │   │   ├── Sunlight: Full sunlight  
+│   │   │   ├── Water: Standing water  
+│   │   │   ├── Humidity: Very high  
+│   ├── Marsh Plants  
+│       ├── Cattail  
+│       │   ├── Sunlight: Full sunlight  
+│       │   ├── Water: Slow-moving or stagnant water  
+│       │   ├── Humidity: Very high  
+├── Desert Plants  
+│   ├── Succulents  
+│   │   ├── Cactus  
+│   │   │   ├── Sunlight: Intense direct sunlight  
+│   │   │   ├── Water: Minimal  
+│   │   │   ├── Humidity: Very low  
+│   ├── Xerophytes  
+│       ├── Mesquite  
+│       │   ├── Sunlight: Intense direct sunlight  
+│       │   ├── Water: Minimal, drought-resistant  
+│       │   ├── Humidity: Very low  
+├── Mountain Plants  
+│   ├── Alpine Plants  
+│   │   ├── Edelweiss  
+│   │   │   ├── Sunlight: Intense  
+│   │   │   ├── Water: Seasonal snowmelt  
+│   │   │   ├── Humidity: Low  
+│   ├── Subalpine Plants  
+│       ├── Pine  
+│       │   ├── Sunlight: Intense  
+│       │   ├── Water: Moderate snowmelt  
+│       │   ├── Humidity: Dry air  
+├── Tundra Plants  
+    ├── Mosses  
+    │   ├── Reindeer Moss  
+    │   │   ├── Sunlight: Limited, seasonal  
+    │   │   ├── Water: Permafrost moisture  
+    │   │   ├── Humidity: Low  
+    ├── Low Shrubs  
+        ├── Arctic Willow  
+        │   ├── Sunlight: Limited  
+        │   ├── Water: Permafrost moisture  
+        │   ├── Humidity: Low  
+
+
+
+
+Ayurvedic medicine:
+
+Ayurvedic Remedies  
+├── Domestic Plants  
+│   ├── Medicinal Plants  
+│   │   ├── Tulsi (Holy Basil)  
+│   │   │   ├── Remedy: Tulsi Kadha  
+│   │   │   │   ├── Ingredients: Tulsi leaves (10), Ginger (1-inch), Black Pepper (5-6), Honey (1 tsp), Water (2 cups)  
+│   │   │   │   ├── Preparation: Boil Tulsi leaves, ginger, and black pepper in water until reduced to half. Strain and add honey.  
+│   │   │   │   ├── Use: Treats cold, cough, fever, and boosts immunity.  
+│   │   ├── Neem  
+│   │   │   ├── Remedy: Neem Leaf Tea  
+│   │   │   │   ├── Ingredients: Fresh Neem leaves (10), Honey (1 tsp), Lemon juice (few drops), Water (2 cups)  
+│   │   │   │   ├── Preparation: Boil Neem leaves in water for 10 minutes, strain, and add honey and lemon juice.  
+│   │   │   │   ├── Use: Detoxifies the body, treats skin infections, and helps in diabetes management.  
+│   │   ├── Aloe Vera  
+│   │       ├── Remedy: Aloe Vera Juice  
+│   │       │   ├── Ingredients: Aloe Vera gel (2 tbsp), Water (1 cup), Honey (optional)  
+│   │       │   ├── Preparation: Blend Aloe Vera gel with water. Add honey for taste. Consume fresh.  
+│   │       │   ├── Use: Aids digestion, treats constipation, and detoxifies the liver.  
+│   ├── Garden Plants  
+│       ├── Mint  
+│       │   ├── Remedy: Mint Herbal Tea  
+│       │   │   ├── Ingredients: Mint leaves (10), Ginger (1-inch), Lemon juice (few drops), Water (2 cups)  
+│       │   │   ├── Preparation: Boil mint leaves and ginger in water for 5 minutes, strain, and add lemon juice.  
+│       │   │   ├── Use: Relieves indigestion, bloating, and headache.  
+│       ├── Basil  
+│           ├── Remedy: Basil Infusion  
+│           │   ├── Ingredients: Fresh Basil leaves (10), Honey (1 tsp), Water (2 cups)  
+│           │   ├── Preparation: Boil basil leaves in water for 10 minutes. Strain and add honey.  
+│           │   ├── Use: Treats sore throat, cold, and respiratory issues.  
+├── Wild Plants  
+│   ├── Forest Plants  
+│   │   ├── Elderberry  
+│   │   │   ├── Remedy: Elderberry Syrup  
+│   │   │   │   ├── Ingredients: Fresh Elderberries (1 cup), Honey (1/2 cup), Water (2 cups)  
+│   │   │   │   ├── Preparation: Boil elderberries in water until reduced. Strain and mix with honey. Store in a jar.  
+│   │   │   │   ├── Use: Treats flu, boosts immunity, and relieves cold symptoms.  
+│   │   ├── Cattail  
+│   │       ├── Remedy: Cattail Root Poultice  
+│   │       │   ├── Ingredients: Fresh cattail roots (chopped), Water (as needed)  
+│   │       │   ├── Preparation: Grind cattail roots with water to form a paste. Apply to wounds.  
+│   │       │   ├── Use: Treats wounds, infections, and inflammation.  
+│   ├── Desert Plants  
+│   │   ├── Aloe Vera (Desert Variety)  
+│   │   │   ├── Remedy: Desert Aloe Gel  
+│   │   │   │   ├── Ingredients: Aloe Vera gel (2 tbsp), Turmeric (a pinch), Honey (optional)  
+│   │   │   │   ├── Preparation: Mix Aloe Vera gel with turmeric. Apply externally for burns or consume for digestion.  
+│   │   │   │   ├── Use: Heals burns, moisturizes skin, and aids digestion.  
+│   ├── Mountain Plants  
+│   │   ├── Pine  
+│   │   │   ├── Remedy: Pine Needle Tea  
+│   │   │   │   ├── Ingredients: Pine needles (1 tbsp), Lemon juice (few drops), Water (2 cups)  
+│   │   │   │   ├── Preparation: Boil pine needles in water for 10 minutes. Strain and add lemon juice.  
+│   │   │   │   ├── Use: Boosts immunity, relieves fatigue, and fights cold.  
+│   ├── Tundra Plants  
+│       ├── Arctic Willow  
+│       │   ├── Remedy: Arctic Willow Tea  
+│       │   │   ├── Ingredients: Arctic Willow leaves (1 tbsp), Water (1 cup)  
+│       │   │   ├── Preparation: Boil leaves in water for 5 minutes. Strain and drink warm.  
+│       │   │   ├── Use: Treats inflammation and relieves joint pain.  
+

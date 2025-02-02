@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inria Sans", serif;
+    overflow-x: hidden;
+}
+
+body{
+    background-image: url(iloveimg-compressed/sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 120vh;
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+}
+  
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    z-index: 2;
+}
+  
+.navbar-white {
+    color: white;
+}
+  
+.menu a.navbar-white {
+    color: white;
+}
+  
+  
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+  
+.menu a{
+    color: white;
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+.menu a:hover{
+    transition: 0.5s;
+    color: #59754C;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    color: #59754C;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.card_continer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    justify-items: center; /* Centers items horizontally */
+}
+
+#img1{
+    background-image: url(iloveimg-compressed/avinash-kumar-xT7OuIFew3Q-unsplash.jpg);
+}
+
+#img2{
+    background-image: url(iloveimg-compressed/hudai-gayiran-i8P9zdvQnhc-unsplash.jpg);
+}
+
+#img3{
+    background-image: url(iloveimg-compressed/paula-brustur-ngzjG6ZhoDw-unsplash.jpg);
+}
+
+#img4{
+    background-image: url(iloveimg-compressed/sarah-dorweiler-2s9aHF4eCjI-unsplash.jpg);
+}
+
+#img5{
+    background-image: url(iloveimg-compressed/jess-bailey-K9BOrwoFVYc-unsplash.jpg);
+}
+
+#img6{
+    background-image: url(iloveimg-compressed/alex-rodriguez-santibanez-kE8XM1HII3E-unsplash.jpg);
+}
+
+#img7{
+    background-image: url(iloveimg-compressed/agata-create-XeNKWTiCPNw-unsplash.jpg);
+}
+
+#img8{
+    background-image: url(iloveimg-compressed/helena-hertz-wWZzXlDpMog-unsplash.jpg);
+}
+
+#img9{
+    background-image: url(iloveimg-compressed/alex-block-7KoKNcwnC0U-unsplash.jpg);
+}
+
+#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30vw;
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+    color: white;
+    box-shadow: 0px 4px 5px rgb(35, 35, 35, 0.5);
+}
+
+.card{
+    display: flex;
+    width: 30vw;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 18px;
+    text-shadow: 0px 4px 5px rgb(35, 35, 35);
+    cursor: pointer;
+}
+
+.card:hover{
+    transition: 0.5s;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+/* Footer Styling */
+.copyright{
+    width: 100%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    background-color: #59754C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana;
+    font-size: 15px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.copyright a{
+    color: white;
+    text-decoration: underline;
+}
+
+@media (min-width: 0px) and (max-width: 500.99px){
+    main{
+        height: 100vh;
+    }
+    .menu a{
+        font-size: 3vw;
+    }
+    .heading{
+        font-size: 3vw;
+    }
+    #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, .card{
+        width: 25vw;
+        height: 10vh;
+        border-radius: 5px;
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600.99px){
+    main{
+        height: 100vh;
+    }
+    .menu a{
+        font-size: 2.5vw;
+    }
+    .heading{
+        font-size: 3vw;
+    }
+    #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, .card{
+        width: 25vw;
+        height: 15vh;
+        border-radius: 5px;
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 700.99px){
+    main{
+        height: 100vh;
+    }
+    .menu a{
+        font-size: 2.5vw;
+    }
+    .heading{
+        font-size: 2.5vw;
+    }
+    #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, .card{
+        width: 27vw;
+        height: 15vh;
+        border-radius: 5px;
+        font-size: 2.5vw;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 800.99px){
+    main{
+        gap: 0px;
+        height: 100vh;
+    }
+    .menu a{
+        font-size: 2.5vw;
+    }
+    .heading{
+        font-size: 2.5vw;
+    }
+    #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, .card{
+        width: 30vw;
+        height: 20vh;
+        border-radius: 10px;
+        font-size: 2.5vw;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000.99px){
+    main{
+        gap: 0px;
+        height: 120vh;
+    }
+    .menu a{
+        font-size: 2vw;
+    }
+    .heading{
+        font-size: 1.5vw;
+    }
+    #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, .card{
+        width: 25vw;
+        border-radius: 10px;
+        font-size: 1.7vw;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200.99px){
+    main{
+        gap: 0px;
+        height: 100vh;
+    }
+    .menu a{
+        font-size: 1.8vw;
+    }
+    #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, .card{
+        width: 25vw;
+        border-radius: 10px;
+        font-size: 1.5vw;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1400.99px){
+    main{
+        gap: 0px;
+        height: 100vh;
+    }
+    .menu a{
+        font-size: 1.8vw;
+    }
+    #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, .card{
+        width: 20vw;
+        border-radius: 10px;
+        font-size: 1.5vw;
+    }
+}
+
+@media (min-width: 1401px){
+    main{
+        gap: 0px;
+        height: 120vh;
+    }
+    .menu a{
+        font-size: 1.3vw;
+    }
+    #img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, .card{
+        width: 25vw;
+        height: 25vh;
+        border-radius: 10px;
+        font-size: 1.5vw;
+    }
+}
+

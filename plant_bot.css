@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(Service_Medicine_Donate_Feedback_page_images/wp6398974.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    overflow-x: hidden; /* Prevents horizontal overflow */
+    overflow-y: auto; /* Allows vertical scrolling */
+}
+
+header{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+  
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    z-index: 2;
+}
+  
+.navbar-white {
+    color: white;
+}
+  
+.menu a.navbar-white {
+    color: white;
+}
+  
+  
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+  
+.menu a{
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+}
+  
+
+h2, h3 {
+    color: #3c763d;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80vw;
+    max-width: 100%; /* Prevents overflow */
+    margin: 1em auto; /* Adds margin at top and bottom */
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1.5px solid rgb(193, 193, 193);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content to the top */
+    align-items: center;
+    max-height: calc(100vh - 2em); /* Ensures container fits within the body */
+    overflow-y: hidden; /* Prevents unnecessary scrolling */
+}
+.input-section {
+    width: 100%; /* Ensures full width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.history-section {
+    width: 100%; /* Ensures full width */
+    max-height: 50vh; /* Limits height */
+    overflow-y: auto; /* Allows vertical scrolling */
+    margin-top: 15px; /* Adds space between sections */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(119, 119, 119, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+}
+.history-section::-webkit-scrollbar{
+    display: none;
+}
+#plantImage {
+    margin-bottom: 15px;
+}
+#preview {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 15px;
+}
+.plant-card {
+    background-color: #e8f5e9;
+    border-left: 5px solid #388e3c;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+input[type="file"] {
+    display: inline-block;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+.file-label {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.file-label:hover {
+    background-color: #45a049;
+}
+.clear-history {
+    background-color: #d9534f;
+}
+.clear-history:hover {
+    background-color: #c9302c;
+}
+
+/* Footer Styling */
+.copyright{
+    width: 100%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    background-color: #385A0C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana;
+    font-size: 15px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.copyright a{
+    color: white;
+    text-decoration: underline;
+}

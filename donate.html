@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate</title>
+  <link rel="stylesheet" href="donate.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="menu">
+          <a href="index.html">HOME</a>
+          <a href="donate.html">DONATE</a>
+          <a href="ayur.html">MEDICINES</a>
+          <a href="blog.html">BLOGS</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="donate-intro">
+      <div class="overlay"></div>
+      <div class="donate-intro2">
+        <div class="heading">
+          <h1>Donate</h1>
+        </div>
+        <div class="intro-para">
+          <div class="para">
+            <p>🌱 Make a Difference with Every Seed You Sow! 🌱</p>
+            <p>Your contribution today isn't just about giving—it's about growing! 🌿 By donating, you’re helping plant more trees, support farmers, and nurture a greener planet for future generations. Together, we can combat climate change, protect biodiversity, and spread the healing power of nature.</p>
+            <p>Join us in this mission to make the Earth bloom again. Every little bit counts, and every donation is a step towards a sustainable, thriving world. 💚</p>
+            <p>🌳 Give a little, grow a lot! 🌟</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="donate-reason">
+      <div class="overlay"></div>
+      <div class="donate-reason2">
+        <div class="heading">
+          <h1>Why Your Donation Matters?</h1>
+        </div>
+        <div class="donate-card">
+          <div class="card-container">
+            <div id="card_part1">
+              <div class="card">
+                <p>🌍
+                  Restore the Planet
+                  Your support helps plant more trees and combat deforestation globally.</p>
+              </div>
+              <div class="card">
+                <p>👨‍🌾
+                  Empower Farmers
+                  We work directly with farmers, providing tools and resources for sustainable farming.</p>
+              </div>
+            </div>
+            <div id="card_part2">
+              <div class="card">
+                <p>🌞
+                  Promote Clean Energy
+                  Your donations support renewable energy projects, reducing reliance on fossil fuels.</p>
+              </div>
+              <div class="card">
+                <p>🌱
+                  Support Urban Greenery
+                  Help build urban gardens and parks to improve air quality and city life.</p>
+              </div>
+            </div>
+            <div id="card_part3">
+              <div class="card">
+                <p>🌿
+                  Boost Biodiversity
+                  Protect habitats and create ecosystems that thrive for future generations.</p>
+              </div>
+              <div class="card">
+                <p>📚
+                  Educate Future Generations
+                  Fund environmental education programs to inspire young minds to care for the planet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="payment">
+      <div class="overlay"></div>
+      <div class="payment2">
+          <div class="heading">
+              <h1>Payment Gateway</h1>
+          </div>
+          <div class="payment_card">
+              <div class="payment_gateway">
+                  <form id="paymentForm">
+                      <p>Enter the amount you wish to Donate:</p>
+                      <label for="amount">
+                          <input type="number" id="amount" min="1" required>
+                      </label>
+                      <div class="buttons">
+                          <button type="submit" id="done_payment">Donate</button>
+                          <p>OR</p>
+                          <button type="button" id="scan" onclick="toggleQR()">Scan QR</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </section>  
+    <div class="QR">
+      <p>Scan the QR</p>
+      <img src="Service_Medicine_Donate_Feedback_page_images/payment_QR.jpg" alt="Payment QR">
+      <button class="closeQR" onclick="toggleQR()">Close</button>
+    </div>
+  </main>
+  <footer>
+    <div class="copyright">
+      <p>We'd love your <a href="feedback.html">Feedback</a></p>
+      <p>© 2025 Plant Parent Companion. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="donate.js"></script>
+</body>
+</html>

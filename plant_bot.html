@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Identifier</title>
+    <link rel="stylesheet" href="plant_bot.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="menu">
+              <a href="index.html">HOME</a>
+              <a href="donate.html">DONATE</a>
+              <a href="ayur.html">MEDICINES</a>
+              <a href="blog.html">BLOGS</a>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="input-section"><br>
+                <h2>Identify a Plant</h2><br>
+                <label for="plantImage" class="file-label">Choose File</label> <!-- File input label -->
+                <input type="file" id="plantImage" accept="image/*" onchange="previewImage()">
+                <button onclick="identifyPlant()">Identify</button>
+                <img id="preview" class="hidden">
+                <div id="result"></div>
+            </div>
+            
+            <div class="history-section">
+                <h3>Recent Identifications</h3>
+                <button class="clear-history" onclick="clearHistory()">Clear History</button>
+                <div id="recentSearches"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>We'd love your <a href="feedback.html">Feedback</a></p>
+            <p>© 2025 Plant Parent Companion. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="plant_bot.js"></script>
+</body>
+</html>
