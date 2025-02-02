@@ -435,6 +435,10 @@ nav{
 
 .plant1-name-img p{
     margin-top: 2%;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .plant2-name-img{
@@ -449,6 +453,11 @@ nav{
 
 .plant2-name-img p{
     margin-top: 2%;
+    overflow-y: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .copyright{
@@ -1350,7 +1359,7 @@ nav{
 @media (min-width: 1001px) and (max-width: 1200.99px){
     .intro-text{
         /* border: 2px solid orangered; */
-        height: 85vh;
+        height: 100vh;
     }
     .plant-var-img1, .plant-var-img2, .plant-var-img3, .plant-var-img4, .plant-var-img5, .plant-var-img6, .plant-var-img7, .plant-var-img8, .plant-var-img9, .plant-var-img10{
         width: 130px;
