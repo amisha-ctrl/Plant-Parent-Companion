@@ -316,10 +316,9 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
-/* Hide QR code initially */
 /* Hide QR code initially */
 .QR {
   display: none;
@@ -344,23 +343,24 @@ button{
 }
 
 /* Responsive Close Button */
-.closeQR {
-  margin-top: 2vh;
-  padding: 1.5vh 3vw;
-  border: none;
-  background-color: red;
-  color: white;
-  font-size: 2vw;
-  border-radius: 1vw;
-  cursor: pointer;
-  width: 20vw;
-  height: 8vh;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: hidden;
+.closeQR {   
+  margin-top: 2vh;   
+  padding: 1.5vh 3vw;   
+  border: none;   
+  background-color: red;   
+  color: white;   
+  font-size: 2vw;   
+  border-radius: 1vw;   
+  cursor: pointer;   
+  width: 20vw;   
+  height: 8vh;   
+  text-align: center;   
+  display: flex;   
+  justify-content: center;   
+  align-items: center;   
+  overflow: hidden; /* Ensures no overflow */
 }
+
 
 .closeQR:hover {
   background-color: darkred;
