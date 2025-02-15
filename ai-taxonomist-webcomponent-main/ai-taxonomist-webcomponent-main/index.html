@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Taxonomist</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+
+    <style>
+        body {
+            background: #FEFEFE;
+            color: #EEE;
+            font-family: sans-serif;
+        }
+        h1, h2, h3, p {
+            color: #EEE;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #333;
+            }
+        }
+    </style>
+
+    <!-- Ensure correct script paths -->
+    <script type="module" src="./dist/src/ai-taxonomist.js"></script>
+
+</head>
+<body>
+    <div id="demo"></div>
+    <script src="https://unpkg.com/ai-taxonomist/dist/src/index.js?module" type="module"></script>
+    <ai-taxonomist apiKey="2b10vZjFkCzMbDQxMHymsJ7Lze" removePlantNetBranding="true"></ai-taxonomist>
+    <script type="module">
+        import * as tslib from "./node_modules/tslib/tslib.es6.js";
+        import { html, render } from './node_modules/lit';
+        import './dist/ai-taxonomist.js';
+
+        document.addEventListener('aiTaxonomistAttachmentsClick', (e) => {
+            console.log("Attachments clicked", e.detail);
+            alert(`Attachments clicked: ${e.detail.taxonName}`);
+        });
+
+        document.addEventListener('aiTaxonomistNewIdentification', () => {
+            console.log("New identification");
+        });
+
+        const apiUrl = 'https://c4c.inria.fr/anura/api';
+        render(
+            html`
+                <template id="aitaxonomist-attachments-template">
+                    <style>
+                        button {
+                            border: 1px solid #8888FF;
+                            background: transparent;
+                            color: #8888FF;
+                            border-radius: 30px;
+                            cursor: pointer;
+                            margin-top: 24px;
+                        }
+                        button:hover {
+                            filter: brightness(1.2);
+                        }
+                    </style>
+                    <button>SELECT SPECIES</button>
+                </template>
+
+                <ai-taxonomist .apiUrl=${apiUrl} backendFormat="c4c" class="prefer-light">
+                </ai-taxonomist>
+            `,
+            document.querySelector('#demo')
+        );
+    </script>
+</body>
+</html>
