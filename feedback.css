@@ -1,0 +1,92 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(Service_Medicine_Donate_Feedback_page_images/customer-feedback-optimize.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  border: 1px solid rgb(255, 255, 255);
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  background-color: rgb(245, 245, 245, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+h1{
+  color: #4460AA;
+  font-size: 4vw;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+  
+.field label {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+  
+.field input {
+  display: flex;
+  width: 60vw;
+  height: 5vh;
+  line-height: 1.5;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(142, 142, 142);
+  background-color: rgb(245, 245, 245, 0.5);
+}
+
+input[type="text"]{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #777;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input[type="text"]:focus{
+  outline: none;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 3% 4%;
+  font-size: 2vw;
+  background-color: #4460AA;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+p{
+  font-size: 2vw;
+}
+
+.home{
+  font-size: 2vw;
+  color: #4460AA;
+  padding: 5px 7px;
+  margin: 10px;
+}

@@ -1,0 +1,1387 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar-white {
+    color: white;
+}
+
+.menu a.navbar-white {
+    color: white;
+}
+
+
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.menu a{
+    color: #468585;
+    font-family: "Instrument Sans", serif;
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+.intro-text{
+    width: 100%;
+    height: 100vh;
+    background-color: #DEF9C4;
+    background-image: url(Home_images/Group\ 4.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+.intro{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    transform: translate(3vw, 9vh);
+
+}
+
+.intro .heading{
+    display: flex;
+    font-family: Verdana;
+    font-weight: bolder;
+    background-image: url(Home_images/Plant-Wallpaper-3840x2400-60182.jpg);
+    background-size: cover;
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text; /* Standard property */
+    -webkit-text-fill-color: transparent; /* Required for WebKit browsers */
+    color: transparent; /* Fallback */
+    font-weight: bolder;
+    font-size: 8.4vw;
+    text-align: left;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.intro p{
+    display: flex;
+    font-family: Verdana;
+    font-weight: bolder;
+    font-size: 2.6vw;
+    color: #385A0C;
+    width: fit-content;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#para1 .bold{
+    font-size: 2.8vw;
+    text-decoration: underline;
+}
+
+#para2 .bold{
+    font-size: 2.8vw;
+    text-decoration: underline;
+}
+
+#para1{
+    display: flex;
+    gap: 0.8vw;
+}
+
+#para2{
+    display: flex;
+    gap: 0.8vw;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* Ensure it is above other elements */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(56, 90, 12, 0.3);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    color: #DEF9C4;
+    border: 1px solid #DEF9C4;
+    font-family: Verdana;
+    font-size: 0.9rem;
+}
+
+.modal-content::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-heading {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    color: #DEF9C4;
+    font-size: 2.5vw;
+}
+
+.close-btn:hover {
+    color: white;
+}
+
+.contact-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(56, 90, 12, 0.3);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    color: #DEF9C4;
+    border: 1px solid #DEF9C4;
+    font-family: Verdana;
+    font-size: 0.9rem;
+}
+
+.contact-content::-webkit-scrollbar{
+    display: none;
+}
+
+.contact-heading {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.contact-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #DEF9C4;
+    font-size: 2.5vw;
+}
+
+.contact-close-btn:hover {
+    color: white;
+}
+
+
+.help-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(56, 90, 12, 0.3);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    color: #DEF9C4;
+    border: 1px solid #DEF9C4;
+    font-family: Verdana;
+    font-size: 0.9rem;
+}
+
+.help-content::-webkit-scrollbar{
+    display: none;
+}
+
+.help-heading {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.help-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #DEF9C4;
+    font-size: 2.5vw;
+}
+
+.help-close-btn:hover {
+    color: white;
+}
+
+#services{
+    width: 100%;
+    padding: 5%;
+    background-image: url(Home_images/wp8153507.webp);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5.5%;
+}
+
+.text-container{
+    overflow-y: hidden;
+    flex-direction: column;
+    border: 0.5px solid white;
+    font-family: Verdana;
+    width: 81%;
+    text-align: justify;
+    color: white;
+    font-size: 2.6vw;
+    background-color: rgb(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+.services-heading h1, h3, h5{
+    display: inline;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #F5F5F5, #C2C2C2, #8F8F8F);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.plant-var{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100vw;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+}
+
+.domestic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wild{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+}
+
+.wild .part1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+
+.wild .part2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.plant-var-img1{
+    width: 150px;
+    height: 150px;
+    background-image: url(Home_images/f11b1073927307.5c1a39abca02d.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.plant-var-img2{
+    width: 150px;
+    height: 150px;
+    background-image: url(Home_images/6591141.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.plant-var-img3{
+    width: 150px;
+    height: 150px;
+    background-image: url(Home_images/crops-clipart-soy-plant-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.plant-var-img4{
+    width: 150px;
+    height: 150px;
+    background-image: url(Home_images/plant-png-vector-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.plant-var-img5{
+    width: 150px;
+    height: 150px;
+    background-image: url(Home_images/download-free-transparent-png-of-plants-drawing-84491-939x1024.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.plant-var-img6{
+    width: 150px;
+    height: 150px;
+    background-image: url(Home_images/plant-pngrepo-com.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.plant-var-img7{
+    width: 150px;
+    height: 150px;
+    background-image: url(Home_images/plant-pngrepo-com\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.plant-var-img8{
+    width: 150px;
+    height: 150px;
+    background-image: url(Home_images/1655406.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.plant-var-img9{
+    width: 150px;
+    height: 150px;
+    background-image: url(Home_images/pngtree-aesthetic-plant-vector-illustration-wall-art-decoration-rjdx-png-image_8614994.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.plant-var-img10{
+    width: 150px;
+    height: 150px;
+    background-image: url(Home_images/plant-pngrepo-com\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.plant-var-img1, .plant-var-img2, .plant-var-img3, .plant-var-img4, .plant-var-img5, .plant-var-img6, .plant-var-img7, .plant-var-img8, .plant-var-img9, .plant-var-img10{
+    cursor: pointer;
+    border: 0.5px solid white;
+}
+
+.plant1-name-img{
+    color: white;
+    font-family: sans-serif;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plant1-name-img p{
+    margin-top: 2%;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plant2-name-img{
+    color: white;
+    font-family: sans-serif;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plant2-name-img p{
+    margin-top: 2%;
+    overflow-y: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright{
+    width: 100%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    background-color: #385A0C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana;
+    font-size: 15px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.copyright a{
+    color: white;
+    text-decoration: underline;
+}
+
+.sub-plant1{
+    border: 0.5px solid whitesmoke;
+    display: none;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    background-color: rgba(5, 5, 5, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+}
+
+.sub-plant1::-webkit-scrollbar{
+    display: none;
+}
+
+.sub-plant1-close{
+    color: white;
+    height: 7vh;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    font-size: 2.5vw;
+    align-items: center;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
+.sub-plant1-close p{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica;
+    font-size: 2.6vw;
+    padding-left: 10px;
+}
+
+.fa-solid{
+    height: 4vw;
+    width: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-plant2{
+    border: 0.5px solid whitesmoke;
+    display: none;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    background-color: rgba(5, 5, 5, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+}
+
+.sub-plant2::-webkit-scrollbar{
+    display: none;
+}
+
+.sub-plant2-close{
+    color: white;
+    height: 7vh;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    font-size: 2.5vw;
+    align-items: center;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
+.sub-plant2-close p{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica;
+    font-size: 2.6vw;
+    padding-left: 10px;
+}
+
+.house-plant{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.house-plant-heading{
+    color: white;
+    font-family: verdana;
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(0, 0, 0, 0.2); */
+    padding: 1%;
+}
+
+.house-plant-heading p{
+    padding-bottom: 2%;
+    padding-left: 2%;
+    font-weight: 500;
+}
+
+.garden-plant{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.garden-plant-heading{
+    color: white;
+    font-family: verdana;
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(0, 0, 0, 0.2); */
+    padding: 1%;
+}
+
+.garden-plant-heading p{
+    padding-bottom: 2%;
+    padding-left: 2%;
+    font-weight: 500;
+}
+
+.medicinal-plant{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.medicinal-plant-heading{
+    color: white;
+    font-family: verdana;
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(0, 0, 0, 0.2); */
+    padding: 1%;
+}
+
+.medicinal-plant-heading p{
+    padding-bottom: 2%;
+    padding-left: 2%;
+    font-weight: 500;
+}
+
+.farm-plant{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.farm-plant-heading{
+    color: white;
+    font-family: verdana;
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(0, 0, 0, 0.2); */
+    padding: 1%;
+}
+
+.farm-plant-heading p{
+    padding-bottom: 2%;
+    padding-left: 2%;
+    font-weight: 500;
+}
+
+.sub-plant-img{
+    border: 0.5px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-weight: 500;
+    font-size: 2vw;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+#sub-plant-img1{
+    background-image: url(Home_images/simplicity-monstera-plant-freehand-drawing-flat-design-free-png.webp);
+}
+
+#sub-plant-img2{
+    background-image: url(Home_images/spring-sale2-flower3.webp);
+}
+
+#sub-plant-img3{
+    background-image: url(Home_images/5041328.png);
+}
+
+#sub-plant-img4{
+    background-image: url(Home_images/2832089.png);
+}
+
+#sub-plant-img5{
+    background-image: url(Home_images/29-296958_flowers-vectors-clipart-plant-single-flower-vector-art.png);
+    background-position: top;
+}
+
+#sub-plant-img6{
+    background-image: url(Home_images/8183876.png);
+}
+
+#sub-plant-img7{
+    background-image: url(Home_images/pngtree-aloe-vera-png-image_9018225.png);
+}
+
+#sub-plant-img8{
+    background-image: url(Home_images/29158.png);
+}
+
+#sub-plant-img9{
+    background-image: url(Home_images/1.webp);
+}
+
+#sub-plant-img10{
+    background-image: url(Home_images/311-3118101_paddy-field-oryza-sativa-rice-crop-clip-art.png);
+}
+
+#sub-plant-img11{
+    background-image: url(Home_images/10133205.png);
+}
+
+#sub-plant-img12{
+    background-image: url(Home_images/584248.png);
+}
+
+#sub-plant-img13{
+    background-image: url(Home_images/pngtree-simple-tree-vector-png-image_9004783.png);
+}
+
+#sub-plant-img14{
+    background-image: url(Home_images/shrubs-illustrations-free-png.webp);
+}
+
+#sub-plant-img15{
+    background-image: url(Home_images/Natural-Grass-Vector-PNG-File.png);
+}
+
+#sub-plant-img16{
+    background-image: url(Home_images/pngtree-green-hill-ground-vector-clipart-png-image_6221576.png);
+}
+
+#sub-plant-img17{
+    background-image: url(Home_images/sea-5030508_1280.webp);
+}
+
+#sub-plant-img18{
+    background-image: url(Home_images/R.png);
+}
+
+#sub-plant-img19{
+    background-image: url(Home_images/flat-illustration-cacuts-in-traditional-pattern-pot-exotic-plant-free-png.webp);
+}
+
+#sub-plant-img20{
+    background-image: url(Home_images/483b62fd106f01d4886430a51e69846a-m-xico-sombrero-cactus-by-vexels.webp);
+}
+
+#sub-plant-img21{
+    background-image: url(Home_images/alpine-landscape-draping-plant-01c-al1.png);
+}
+
+#sub-plant-img22{
+    background-image: url(Home_images/potted-plants-illustration-house-plants-png.webp);
+}
+
+#sub-plant-img23{
+    background-image: url(Home_images/7f4a30e8dcdc763ec7cd36ae8c0b4a7a-moss-tree-green-by-vexels.webp);
+}
+
+#sub-plant-img24{
+    background-image: url(Home_images/bush-clipart-xl.png);
+}
+
+.forest-plant{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.forest-plant-heading{
+    color: white;
+    font-family: verdana;
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(0, 0, 0, 0.2); */
+    padding: 1%;
+}
+
+.forest-plant-heading p{
+    padding-bottom: 2%;
+    padding-left: 2%;
+    font-weight: 500;
+}
+
+.grassland-plant{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.grassland-plant-heading{
+    color: white;
+    font-family: verdana;
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(0, 0, 0, 0.2); */
+    padding: 1%;
+}
+
+.grassland-plant-heading p{
+    padding-bottom: 2%;
+    padding-left: 2%;
+    font-weight: 500;
+}
+
+.wetland-plant{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wetland-plant-heading{
+    color: white;
+    font-family: verdana;
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(0, 0, 0, 0.2); */
+    padding: 1%;
+}
+
+.wetland-plant-heading p{
+    padding-bottom: 2%;
+    padding-left: 2%;
+    font-weight: 500;
+}
+
+.desert-plant{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.desert-plant-heading{
+    color: white;
+    font-family: verdana;
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(0, 0, 0, 0.2); */
+    padding: 1%;
+}
+
+.desert-plant-heading p{
+    padding-bottom: 2%;
+    padding-left: 2%;
+    font-weight: 500;
+}
+
+.mountain-plant{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mountain-plant-heading{
+    color: white;
+    font-family: verdana;
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(0, 0, 0, 0.2); */
+    padding: 1%;
+}
+
+.mountain-plant-heading p{
+    padding-bottom: 2%;
+    padding-left: 2%;
+    font-weight: 500;
+}
+
+.tundra-plant{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tundra-plant-heading{
+    color: white;
+    font-family: verdana;
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(0, 0, 0, 0.2); */
+    padding: 1%;
+}
+
+.tundra-plant-heading p{
+    padding-bottom: 2%;
+    padding-left: 2%;
+    font-weight: 500;
+}
+
+.foilage, .flower1, .suc, .air, .flower2, .herbs, .orna, .herb-med, .ayur-med, .cereal, .veges, .fruit-crp, .trees, .shrubs, .grass, .ground, .aquatic, .marsh, .succulents, .xero, .alpine, .subalp, .moss, .low{
+    border: 1px solid #385A0C;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    background-color: rgb(121, 171, 75, 0.8);
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
+    display: none;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.foilage::-webkit-scrollbar{
+    display: none;
+}
+
+.flower1::-webkit-scrollbar{
+    display: none;
+}
+
+.suc::-webkit-scrollbar{
+    display: none;
+}
+
+.air::-webkit-scrollbar{
+    display: none;
+}
+
+.flower2::-webkit-scrollbar{
+    display: none;
+}
+
+.herbs::-webkit-scrollbar{
+    display: none;
+}
+
+.orna::-webkit-scrollbar{
+    display: none;
+}
+
+.herb-med::-webkit-scrollbar{
+    display: none;
+}
+
+.ayur-med::-webkit-scrollbar{
+    display: none;
+}
+
+.cereal::-webkit-scrollbar{
+    display: none;
+}
+
+.veges::-webkit-scrollbar{
+    display: none;
+}
+
+.fruit-crp::-webkit-scrollbar{
+    display: none;
+}
+
+.trees::-webkit-scrollbar{
+    display: none;
+}
+
+.shrubs::-webkit-scrollbar{
+    display: none;
+}
+
+.grass::-webkit-scrollbar{
+    display: none;
+}
+
+.ground::-webkit-scrollbar{
+    display: none;
+}
+
+.aquatic::-webkit-scrollbar{
+    display: none;
+}
+
+.marsh::-webkit-scrollbar{
+    display: none;
+}
+
+.succulents::-webkit-scrollbar{
+    display: none;
+}
+
+.xero::-webkit-scrollbar{
+    display: none;
+}
+
+.alpine::-webkit-scrollbar{
+    display: none;
+}
+
+.subalp::-webkit-scrollbar{
+    display: none;
+}
+
+.moss::-webkit-scrollbar{
+    display: none;
+}
+
+.low::-webkit-scrollbar{
+    display: none;
+}
+
+
+.folilage-close, .flower1-close, .suc-close, .air-close, .flower2-close, .herbs-close, .orna-close, .herb-med-close, .ayur-med-close, .cereal-close, .veges-close, .fruit-crp-close, .trees-close, .shrubs-close, .grass-close, .ground-close, .aquatic-close, .marsh-close, .succulents-close, .xero-close, .alpine-close, .subalp-close, .moss-close, .low-close{
+    display: flex;
+    justify-content: right;
+    padding-right: 0.5vw;
+    height: 7vh;
+    cursor: pointer;
+    overflow-y: hidden;
+    font-size: 2.5vw;
+    margin-top: 5px;
+}
+
+.folilage-content, .flower1-content, .suc-content, .air-content, .flower2-content, .herbs-content, .orna-content, .herb-med-content, .ayur-med-content, .cereal-content, .veges-content, .fruit-crp-content, .trees-content, .shrubs-content, .grass-content, .ground-content, .aquatic-content, .marsh-content, .succulents-content, .xero-content, .alpine-content, .subalp-content, .moss-content, .low-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image1{
+    background-image: url(Sub_Plant_info_images/Lungwort-GettyImages-126017362-5ad90293c064710038a5efee.jpg);
+}
+
+.image2{
+    background-image: url(Sub_Plant_info_images/OIP.jpg);
+}
+
+.image3{
+    background-image: url(Sub_Plant_info_images/PmnbHMeekAxBFcT4Jk62iJ-1536-80.jpg);
+}
+
+.image4{
+    background-image: url(Sub_Plant_info_images/air-purifying-plants-for-salon-indoors-e1471533556228.jpg);
+}
+
+.image5{
+    background-image: url(Sub_Plant_info_images/colorful-beautiful-flower-garden-wallpapers-1920x1200.jpg);
+}
+
+.image6{
+    background-image: url(Sub_Plant_info_images/the-scented-herb-garden-1402634-01-718860c532154d7e9f6ae157c001310e.jpg);
+}
+
+.image7{
+    background-image: url(Sub_Plant_info_images/close-up-of-boxwood-bushes-in-amstelpark-during-sunlight-562788621-59a5c0b668e1a200136f6c3b.jpg);
+}
+
+.image8{
+    background-image: url(Sub_Plant_info_images/herbal-medicines-ss-18-scaled.webp);
+}
+
+.image9{
+    background-image: url(Sub_Plant_info_images/Ayurvedic-Herbs.jpg);
+}
+
+.image10{
+    background-image: url(Sub_Plant_info_images/OIP.jpeg);
+}
+
+.image11{
+    background-image: url(Sub_Plant_info_images/SJM-L-GARDENING101-02XX-06_82066604-2.webp);
+}
+
+.image12{
+    background-image: url(Sub_Plant_info_images/Apple_Orchard.webp);
+}
+
+.image13{
+    background-image: url(Sub_Plant_info_images/tree-autumn-field.jpg);
+}
+
+.image14{
+    background-image: url(Sub_Plant_info_images/hedge-of-wild-shrubs-and-trees-sun-travels.jpg);
+}
+
+.image15{
+    background-image: url(Sub_Plant_info_images/R.jpeg);
+}
+
+.image16{
+    background-image: url(Sub_Plant_info_images/3d28e03ab0b3a04dcaa6768d2a5faac5.jpg);
+}
+
+.image17{
+    background-image: url(Sub_Plant_info_images/arrowhead-in-bloom.jpg);
+}
+
+.image18{
+    background-image: url(Sub_Plant_info_images/R\ \(1\).jpeg);
+}
+
+.image19{
+    background-image: url(Sub_Plant_info_images/v0y3LDLWkGWsKCehFo3F9uhPVoQbx2IMqAlbyw-2uuc.webp);
+}
+
+.image20{
+    background-image: url(Sub_Plant_info_images/the-hidden-beauty-of-xerophytes.jpg);
+}
+
+.image21{
+    background-image: url(Sub_Plant_info_images/Leuchrysum\ albicans\ subsp\ alpinum\ 9.JPG);
+}
+
+.image22{
+    background-image: url(Sub_Plant_info_images/20b168253f69a53567f96549f16771d3.jpg);
+}
+
+.image23{
+    background-image: url(Sub_Plant_info_images/moss.jpg);
+}
+
+.image24{
+    background-image: url(Sub_Plant_info_images/EuonymusEmeraldGaiety-GettyImages-629186766-4162c291ee0f4e56816704522d9d05cc.jpg);
+}
+
+.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10, .image11, .image12, .image13, .image14, .image15, .image16, .image17, .image18, .image19, .image20, .image21, .image22, .image23, .image24{
+    border: 2px solid #385A0C;
+    width: 60vw;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.plant-para{
+    display: flex;
+    text-align: center;
+    color: #101c00;
+    font-family: sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.plant-para::-webkit-scrollbar{
+    display: none;
+}
+
+@media (min-width: 0px) and (max-width: 500.99px){
+    nav{
+        height: 5vh;
+    }
+    .intro-text{
+        /* border: 2px solid red; */
+        height: 40vh;
+    }
+    .plant-var-img1, .plant-var-img2, .plant-var-img3, .plant-var-img4, .plant-var-img5, .plant-var-img6, .plant-var-img7, .plant-var-img8, .plant-var-img9, .plant-var-img10{
+        width: 60px;
+        height: 60px;
+    }
+    .plant-var{
+        height: 50vh;
+    }
+    .wild{
+        height: 30vh;
+    }
+    .sub-plant1, .foilage, .flower1, .suc, .air, .flower2, .herbs, .orna, .herb-med, .ayur-med, .cereal, .veges, .fruit-crp, .trees, .shrubs, .grass, .ground, .aquatic, .marsh, .succulents, .xero, .alpine, .subalp, .moss, .low{
+        height: 60%;
+    }
+    .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10, .image11, .image12, .image13, .image14, .image15, .image16, .image17, .image18, .image19, .image20, .image21, .image22, .image23, .image24{
+        height: 30vh;
+    }
+    .sub-plant2{
+        height: 60%;
+    }
+    .sub-plant-img{
+        width: 60px;
+        height: 60px;
+    }
+    .close-btn{
+        font-size: 8vw;
+    }
+    .contact-close-btn{
+        font-size: 8vw;
+    }
+    .help-close-btn{
+        font-size: 8vw;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600.99px){
+    nav{
+        height: 5vh;
+    }
+    .intro-text{
+        /* border: 2px solid blue; */
+        height: 50vh;
+    }
+    .plant-var-img1, .plant-var-img2, .plant-var-img3, .plant-var-img4, .plant-var-img5, .plant-var-img6, .plant-var-img7, .plant-var-img8, .plant-var-img9, .plant-var-img10{
+        width: 75px;
+        height: 75px;
+    }
+    .plant-var{
+        height: 50vh;
+    }
+    .wild{
+        height: 30vh;
+    }
+    .sub-plant1, .foilage, .flower1, .suc, .air, .flower2, .herbs, .orna, .herb-med, .ayur-med, .cereal, .veges, .fruit-crp, .trees, .shrubs, .grass{
+        height: 65%;
+    }
+    .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10, .image11, .image12, .image13, .image14, .image15, .image16, .image17, .image18, .image19, .image20, .image21, .image22, .image23, .image24{
+        height: 30vh;
+    }
+    .sub-plant2{
+        height: 65%;
+    }
+    .sub-plant-img{
+        width: 75px;
+        height: 75px;
+    }
+    .close-btn{
+        font-size: 6vw;
+    }
+    .contact-close-btn{
+        font-size: 6vw;
+    }
+    .help-close-btn{
+        font-size: 6vw;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 700.99px){
+    nav{
+        height: 6vh;
+    }
+    .intro-text{
+        /* border: 2px solid green; */
+        height: 55vh;
+    }
+    .plant-var-img1, .plant-var-img2, .plant-var-img3, .plant-var-img4, .plant-var-img5, .plant-var-img6, .plant-var-img7, .plant-var-img8, .plant-var-img9, .plant-var-img10{
+        width: 80px;
+        height: 80px;
+    }
+    .plant-var{
+        height: 50vh;
+    }
+    .wild{
+        height: 30vh;
+    }
+    .sub-plant1, .foilage, .flower1, .suc, .air, .flower2, .herbs, .orna, .herb-med, .ayur-med, .cereal, .veges, .fruit-crp, .trees, .shrubs, .grass, .ground, .aquatic, .marsh, .succulents, .xero, .alpine, .subalp, .moss, .low{
+        height: 70%;
+    }
+    .sub-plant2{
+        height: 70%;
+    }
+    .sub-plant-img{
+        width: 80px;
+        height: 80px;
+    }
+    .close-btn{
+        font-size: 6vw;
+    }
+    .contact-close-btn{
+        font-size: 6vw;
+    }
+    .help-close-btn{
+        font-size: 6vw;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 800.99px){
+    .intro-text{
+        /* border: 2px solid darkgoldenrod; */
+        height: 60vh;
+    }
+    .plant-var-img1, .plant-var-img2, .plant-var-img3, .plant-var-img4, .plant-var-img5, .plant-var-img6, .plant-var-img7, .plant-var-img8, .plant-var-img9, .plant-var-img10{
+        width: 95px;
+        height: 95px;
+    }
+    .plant-var{
+        height: 60vh;
+    }
+    .wild{
+        height: 35vh;
+    }
+    .sub-plant1, .foilage, .flower1, .suc, .air, .flower2, .herbs, .orna, .herb-med, .ayur-med, .cereal, .veges, .fruit-crp, .trees, .shrubs, .grass, .ground, .aquatic, .marsh, .succulents, .xero, .alpine, .subalp, .moss, .low{
+        height: 75%;
+    }
+    .sub-plant2{
+        height: 75%;
+    }
+    .sub-plant-img{
+        width: 95px;
+        height: 95px;
+    }
+    .close-btn{
+        font-size: 4.5vw;
+    }
+    .contact-close-btn{
+        font-size: 4.5vw;
+    }
+    .help-close-btn{
+        font-size: 4.5vw;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000.99px){
+    .intro-text{
+        /* border: 2px solid purple; */
+        height: 75vh;
+    }
+    .plant-var-img1, .plant-var-img2, .plant-var-img3, .plant-var-img4, .plant-var-img5, .plant-var-img6, .plant-var-img7, .plant-var-img8, .plant-var-img9, .plant-var-img10{
+        width: 110px;
+        height: 110px;
+    }
+    .plant-var{
+        height: 70vh;
+    }
+    .wild{
+        height: 45vh;
+    }
+    .sub-plant1, .foilage, .flower1, .suc, .air, .flower2, .herbs, .orna, .herb-med, .ayur-med, .cereal, .veges, .fruit-crp, .trees,  .shrubs, .grass, .ground, .aquatic, .marsh, .succulents, .xero, .alpine, .subalp, .moss, .low{
+        height: 75%;
+    }
+    .sub-plant2{
+        height: 75%;
+    }
+    .sub-plant-img{
+        width: 110px;
+        height: 110px;
+    }
+    .close-btn{
+        font-size: 4vw;
+    }
+    .contact-close-btn{
+        font-size: 4vw;
+    }
+    .help-close-btn{
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200.99px){
+    .intro-text{
+        /* border: 2px solid orangered; */
+        height: 100vh;
+    }
+    .plant-var-img1, .plant-var-img2, .plant-var-img3, .plant-var-img4, .plant-var-img5, .plant-var-img6, .plant-var-img7, .plant-var-img8, .plant-var-img9, .plant-var-img10{
+        width: 130px;
+        height: 130px;
+    }
+    .plant-var{
+        height: 70vh;
+    }
+    .wild{
+        height: 45vh;
+    }
+    .sub-plant-img{
+        width: 130px;
+        height: 130px;
+    }
+    .close-btn{
+        font-size: 3vw;
+    }
+    .contact-close-btn{
+        font-size: 3vw;
+    }
+    .help-close-btn{
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <form id="form">
+      <div class="form-container">
+        <div class="container">
+          <h1>Feedback</h1>
+          <div class="field">
+            <label for="to_name"><p>Receiver's Name:</p></label>
+            <input type="text" name="to_name" id="to_name">
+          </div>
+          <div class="field">
+            <label for="from_name"><p>Sender's Name:</p></label>
+            <input type="text" name="from_name" id="from_name">
+          </div>
+          <div class="field">
+            <label for="message"><p>Feedback:</p></label>
+            <input type="text" name="message" id="message">
+          </div>
+          <div class="field">
+            <label for="reply_to"><p>Your Email id:</p></label>
+            <input type="text" name="reply_to" id="reply_to">
+          </div>
+        
+          <input type="submit" id="button" value="Send Email" ><br>
+          <p><a class="home" href="index.html">Home</a></p>
+        </div>
+      </div>
+    </form>
+      
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      
+    <script type="text/javascript">
+        emailjs.init('-h_Txx3rYncWIo2OY')
+    </script>
+    <script src="feedback.js"></script>
+</body>
+</html>
