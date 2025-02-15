@@ -1,0 +1,626 @@
+@import 'variables.scss';
+
+.modal-card-container {
+  display: flex;
+  align-items: flex-start;
+  position: fixed;
+  z-index: 4;
+  padding: 1rem;
+  background: $white;
+  font-family: $fira-sans;
+  color: $dark-grey;
+  left: 50%;
+  top: 50%;
+  margin-left: -10rem; // * NOTE: -10rem = negative half the width of .modal-card-container
+  margin-top: -7.5rem; // * NOTE: -7.5rem = negative half the height of .modal-card-container
+  width: 20rem;
+
+  .exit-button {
+    position: absolute;
+    border: none;
+    right: 0;
+    top: 4px;
+    background-color: $white;
+
+    svg {
+      fill: #555;
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+
+  &.edit-profile {
+    border-radius: 2px;
+    max-height: 91vh;
+    height: max-content;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 700px;
+    padding: 1.5rem 6.25rem 1.5rem 6.25rem;
+    overflow: scroll;
+  }
+
+  &.subscription-widget {
+    overflow: hidden;
+    border-radius: 2px;
+    min-height: 75vh;
+    max-height: 91vh;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 700px;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  &.saveAOI {
+    border-radius: 2px;
+    max-height: 91vh;
+    height: max-content;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 700px;
+    padding: 1.5rem 6.25rem 1.5rem 6.25rem;
+    overflow: scroll;
+  }
+
+  &.info-content {
+    display: flex;
+    flex-direction: column;
+    width: 58rem;
+    height: 35rem;
+    margin-left: -25rem;
+    top: 30%;
+    font-family: $fira-sans;
+    padding: 1rem;
+
+    .info-content-container {
+      padding: 1rem;
+      overflow-y: scroll;
+      width: 100%;
+      .header {
+        &.metadata {
+          table {
+            width: 100%;
+          }
+        }
+        h2 {
+          text-transform: uppercase;
+          line-height: 1rem;
+          font-weight: 500;
+          font-size: 1rem;
+          display: block;
+          color: $dark-grey;
+        }
+
+        h3 {
+          font-weight: normal;
+          color: #aaa;
+          line-height: 1rem;
+          font-size: 0.8rem;
+          margin-top: 0.75rem;
+          color: $medium-dark-grey;
+        }
+      }
+      .button-container {
+        border-top: 1px solid $modal-border;
+        a {
+          text-decoration: none;
+        }
+
+        .orange-button {
+          text-transform: uppercase;
+          min-width: 7.75rem;
+          width: auto;
+          font-size: 0.85rem;
+        }
+      }
+
+      table,
+      .overview-container,
+      .citation-container {
+        padding-top: 1rem;
+      }
+
+      .citation-container {
+        padding-top: 1rem;
+        color: #aaa;
+        font-size: 0.75rem;
+      }
+
+      table {
+        border-collapse: collapse;
+        font-size: 0.7rem;
+
+        tr:nth-child(even) {
+          background-color: rgb(242, 242, 243);
+        }
+
+        tr {
+          td.label {
+            line-height: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 0.7rem;
+            width: 120px; // * pixels are required
+            border-right: 1px solid $modal-border;
+            border-bottom: 1px solid $modal-border;
+            padding: 0.65rem;
+          }
+
+          td.label-info {
+            line-height: 1rem;
+            border-bottom: 1px solid $modal-border;
+            padding-left: 0.85rem;
+            font-size: 0.8125rem;
+            line-height: 22.1px;
+            color: rgb(85, 85, 85);
+          }
+        }
+      }
+    }
+
+    .overview-container {
+      font-size: 0.8rem;
+      h3 {
+        font-weight: 500;
+        font-size: 1rem;
+      }
+
+      div > p {
+        line-height: 1.25rem;
+        margin-top: 0.75rem;
+      }
+    }
+  }
+
+  &.planet-info {
+    width: 30rem;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &.layer-dashboard {
+    width: 90vw;
+    height: 90vh;
+    top: 11rem;
+    left: 0%;
+    margin-left: 5vw;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &.pen-widget {
+    height: 30rem;
+    top: 30%;
+    overflow: scroll;
+  }
+
+  &.pen-widget-coordform {
+    height: 500px;
+    top: 40%;
+    overflow: scroll;
+  }
+
+  &.measure-widget {
+    top: 21%;
+    left: 75%;
+    height: 11rem;
+    max-width: 350px;
+    min-width: 300px;
+    overflow: auto;
+    overflow-x: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    .esri-coordinate-conversion {
+      font-size: 11px !important;
+      width: 300px !important;
+    }
+  }
+
+  &.gfw-login-widget {
+    top: 25%;
+    left: 75%;
+    height: 7.5rem;
+    width: 17rem;
+  }
+
+  &.search-widget {
+    padding-top: 2rem;
+    color: $dark-grey;
+    overflow: visible;
+    height: 13rem;
+    .search-widget-wrapper {
+      position: relative;
+      top: 16px;
+    }
+    .esri-search {
+      position: relative;
+      top: 1px;
+    }
+
+    .modal-content-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .directions {
+        display: flex;
+        flex-direction: column;
+
+        .form-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          align-items: flex-end;
+
+          p {
+            color: red;
+            margin: 0px;
+            font-size: 0.8125rem;
+            line-height: 21.1px;
+            font-weight: 400;
+          }
+
+          .input-coordinates {
+            border: none;
+            border-bottom: 1px solid $black;
+            max-width: 5.5rem;
+            font-family: $fira-sans;
+            font-size: 1.25rem;
+          }
+        }
+
+        .form-wrapper > .custom-dimensions {
+          width: 5rem;
+          text-transform: capitalize;
+        }
+      }
+
+      .search-widget-wrapper {
+        .esri-search {
+          border: 1px solid black;
+        }
+      }
+    }
+  }
+  &.share-widget,
+  &.print-widget {
+    top: 30%;
+    .directions {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &.print-widget {
+    border-radius: 3px;
+    overflow: hidden;
+    p {
+      font-size: 1.25rem;
+      text-align: center;
+    }
+
+    a {
+      display: flex;
+      justify-content: space-between;
+      width: 5.5rem;
+      text-decoration: none;
+      color: $light-grey;
+      margin-top: 0.5rem;
+    }
+  }
+
+  &.share-widget {
+    width: 36rem;
+    margin-left: -18rem;
+    margin-right: -18rem;
+    h4 {
+      margin-bottom: auto;
+      font-size: 1.3125rem;
+      font-weight: 400;
+      line-height: 35.7px;
+    }
+
+    p {
+      font-size: 0.8125rem;
+      line-height: 21.1px;
+      font-weight: 400;
+    }
+
+    .copy-link-wrapper {
+      display: flex;
+      height: 2.5rem;
+
+      input,
+      button {
+        height: auto;
+      }
+
+      input {
+        width: 370px;
+        font-size: 0.8125rem;
+      }
+
+      button {
+        width: 4rem;
+        border: 1px solid $black;
+        background-color: $white;
+        color: $base-yellow;
+        font-size: 0.875rem;
+        font-weight: 600;
+      }
+    }
+
+    .share-button-wrapper {
+      margin-top: 1rem;
+
+      .share-button {
+        height: 40px;
+        width: 40px;
+        border: none;
+        margin-right: 1rem;
+      }
+
+      .facebook {
+        background-color: #36589f;
+      }
+
+      .twitter {
+        background-color: #568dce;
+      }
+    }
+  }
+
+  .orange-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 2rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    background-color: $base-yellow;
+    color: $white;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-family: $fira-sans;
+
+    svg {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .subscribe-button-container,
+  .date-created,
+  .other-row {
+    margin: 1rem;
+  }
+
+  .subscribe-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .delete-row-label {
+    padding-top: 3px;
+  }
+  .source-summary {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  .source-summary h3 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .source-summary p {
+    margin: 10px 0;
+  }
+
+  .toggle-switch,
+  .toggle-switch-subscription {
+    transition: all 0.3s ease;
+    background: gray;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    height: 10px;
+    width: 17px;
+    margin-top: 5px;
+  }
+
+  .toggle-switch span,
+  .toggle-switch-subscription span {
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+    height: 6px;
+    width: 6px;
+    left: 2px;
+    top: 2px;
+  }
+
+  .toggle-switch-subscription.active-subscription span {
+    left: 9px;
+  }
+
+  .toggle-switch-subscription {
+    float: right;
+    margin-left: 10px;
+    margin-top: 4px;
+
+    &.active-subscription {
+      background-color: $base-yellow;
+    }
+  }
+
+  .subscription-unconfirmed {
+    display: flex;
+    align-items: center;
+  }
+  .subscription-unconfirmed .subscription-uncle {
+    position: relative;
+  }
+  .subscription-unconfirmed-wrap:hover .subscribe-tooltipmap {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+  .subscription-unconfirmed-wrap {
+    display: inline-block;
+    float: left;
+  }
+  .subscription-unconfirmed-wrap .subscription-svg {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  .subscription-unconfirmed-wrap .subscribe-tooltipmap {
+    position: absolute;
+    background: #fffee2;
+    -webkit-box-shadow: 0 1px 3px rgba(85, 85, 85, 0.25);
+    box-shadow: 0 1px 3px rgba(85, 85, 85, 0.25);
+    z-index: 1000;
+    margin: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-transform: uppercase;
+    color: #555;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    bottom: 100%;
+    left: 115px;
+    text-align: center;
+    padding: 6px 8px;
+    white-space: nowrap;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+    width: 200px;
+    white-space: normal;
+  }
+  .subscribe-tooltipmap:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #fffee2;
+    z-index: 2;
+    bottom: 0px;
+    left: 0px;
+    -webkit-transform: translate(-50%, 50%) rotate(270deg);
+    transform: translate(-50%, 50%) rotate(270deg);
+    border-width: 1px;
+    border-color: #f0f0ed;
+    border-style: solid;
+  }
+  .subscription-explanation {
+    max-width: 230px;
+  }
+  .dataset-list {
+    display: inline-block;
+  }
+  .step-title {
+    font-size: 24px;
+    margin: 0 auto;
+    color: #555;
+    text-align: center;
+  }
+  .custom-checkbox {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .name-row {
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .name-row.no-warning {
+    margin-left: 0;
+  }
+  .source-row {
+    border-bottom: 1px solid $modal-border;
+    display: table;
+    width: 100%;
+    margin: 0;
+  }
+  .source-row:nth-child(even) {
+    background: #f2f2f3;
+  }
+  .source-row .other-row {
+    font-size: 14px;
+  }
+  .source-row .other-row.date-created {
+    font-style: italic;
+  }
+  .source-row .other-row p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .source-row .btn-delete-subscription {
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    background: none;
+    outline: none;
+    box-shadow: none;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: $fira-sans;
+    font-feature-settings: 'liga' 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: $mobile-device) {
+    .modal-card-container {
+      width: 15rem;
+      margin-left: -8.5rem; // * NOTE: -8.5rem is an estimate
+    }
+  }
+}
+
+.dim-container {
+  position: fixed;
+  z-index: 3;
+  opacity: 0.5;
+  width: 100%;
+  background-color: $black;
+  top: 0;
+  height: 100%;
+
+  &.measure-widget {
+    display: none;
+  }
+}

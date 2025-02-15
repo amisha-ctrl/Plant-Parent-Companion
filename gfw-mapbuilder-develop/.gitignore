@@ -1,0 +1,21 @@
+# Ignore the build and dist directories
+build
+dist
+vendors
+webpackBuild
+libBuild
+.env
+
+# Ignore these, just do it
+arcgis-modules.txt
+node_modules
+.DS_Store
+*.log
+*.swp
+
+#pycharm
+.idea/
+.vscode/
+
+cypress/videos
+cypress/screenshots

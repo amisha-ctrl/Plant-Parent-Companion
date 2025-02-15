@@ -1,0 +1,66 @@
+@import 'variables.scss';
+
+.widget-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  right: 20px;
+  width: 76px;
+  top: 90px;
+  position: absolute;
+  z-index: 1;
+
+  .widget-row {
+    display: flex;
+    flex-direction: row;
+
+    &.legend {
+      display: none;
+    }
+
+    .widget-container {
+      display: flex;
+      border: 1px solid $medium-dark-grey;
+      box-sizing: content-box;
+      background-color: $white;
+      width: $map-widget-square;
+      height: $map-widget-square;
+
+      .image-wrapper {
+        display: flex;
+        height: auto;
+        width: $map-widget-square;
+        background-color: $white;
+        border: none;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .widget-wrapper {
+    top: auto;
+    right: 0;
+    bottom: 7rem;
+    width: 55px;
+    z-index: 2;
+    .widget-row {
+      flex-direction: column;
+
+      &.legend {
+        display: flex;
+      }
+
+      .widget-container {
+        .image-wrapper,
+        .exit-button {
+          background: $white;
+        }
+      }
+    }
+  }
+}

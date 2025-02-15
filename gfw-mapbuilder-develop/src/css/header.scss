@@ -1,0 +1,304 @@
+@import 'variables.scss';
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  height: $header-height;
+  background-color: $header-color;
+  z-index: 2;
+  font-family: $fira-sans;
+  color: $dark-grey;
+  .header-spacer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    height: $header-height;
+    background-color: $header-color;
+    z-index: 2;
+    font-family: $fira-sans;
+    color: $dark-grey;
+  }
+
+  .title-container {
+    display: flex;
+
+    .gfw-logo {
+      max-height: $header-height;
+    }
+
+    .titles {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-left: 1rem;
+      padding: 0.5rem;
+
+      h1,
+      h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: normal;
+      }
+
+      h1 {
+        font-size: 1.25rem;
+        line-height: 25px;
+      }
+
+      h2 {
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  .selectors-container {
+    display: flex;
+    align-items: center;
+    .header-link {
+      cursor: pointer;
+      border: none;
+      height: auto;
+      text-transform: uppercase;
+      font-size: 12px;
+      text-decoration: none;
+      color: #555;
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+      margin-right: 1rem;
+      svg {
+        margin-right: 4px;
+      }
+    }
+    .language-dropdown-container,
+    .theme-dropdown-container {
+      display: flex;
+      padding-right: 1rem;
+      margin-top: 1rem;
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .dropdown {
+        width: fit-content;
+      }
+
+      .dropdown {
+        list-style: none;
+        cursor: pointer;
+        border: none;
+        height: auto;
+        text-transform: uppercase;
+        font-size: 12px;
+
+        .label-wrapper {
+          display: flex;
+          margin-bottom: 0.75rem;
+
+          svg {
+            margin-top: auto;
+            margin-bottom: auto;
+          }
+        }
+
+        .options {
+          display: none;
+          background-color: #fff;
+          position: absolute;
+          z-index: 10;
+          overflow-x: hidden;
+          overflow-y: auto;
+          max-height: 80vh;
+          min-width: 100px;
+          border-top: 3px solid rgb(240, 171, 0);
+          height: auto;
+
+          li {
+            border-bottom: 1px solid #aaa;
+            padding: 10px;
+
+            &.selected {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .dropdown:hover {
+        top: 1.25rem;
+      }
+
+      .dropdown:hover .options {
+        display: block;
+      }
+    }
+
+    .gfw-login-container {
+      display: flex;
+      margin-right: 1rem;
+      align-content: center;
+      font-family: $fira-sans;
+      font-size: 0.75rem;
+
+      .gfw-login-button {
+        display: flex;
+        border: none;
+        background-color: inherit;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+
+        svg,
+        p {
+          margin: 0.25rem;
+        }
+
+        &.grey {
+          background-color: $light-light-grey;
+        }
+      }
+
+      .dropdown-wrapper {
+        position: absolute;
+        right: 20px;
+        z-index: 100;
+        top: 50px;
+        width: 250px;
+        background: $white;
+        border: 1px solid $dropdown-border;
+        color: $black;
+
+        .subscription-authentication,
+        .options-modal {
+          text-decoration: none;
+          list-style: none;
+          &.twitter-box {
+            background: #598dca;
+          }
+
+          &.facebook-box {
+            background: #39579b;
+          }
+
+          &.google-box {
+            background: #da4735;
+          }
+
+          .subscribe-method,
+          .more-list {
+            vertical-align: baseline;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            border: 0;
+
+            .gfw-api-option {
+              font-size: 0.9375rem;
+              font-weight: 400;
+
+              padding: 12px 15px;
+              max-width: none;
+              margin-right: 0 !important;
+              cursor: pointer;
+
+              p {
+                margin: unset;
+              }
+
+              a {
+                text-decoration: none;
+              }
+
+              &:hover {
+                background-color: $light-light-grey;
+              }
+            }
+          }
+        }
+        .subscription-authentication {
+          padding: 0 1rem 1rem 1rem;
+
+          p {
+            font-size: 0.75rem;
+          }
+
+          .subscribe-method {
+            border-radius: 1.25rem;
+            font-size: 0.9rem;
+            max-width: none;
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-decoration: none;
+
+            .-facebook,
+            .-google,
+            .-twitter {
+              color: $white;
+              text-decoration: none;
+            }
+
+            &.twitter-box {
+              background: #598dca;
+            }
+
+            &.facebook-box {
+              background: #39579b;
+            }
+
+            &.google-box {
+              background: #da4735;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-device) {
+  .header-container {
+    .title-container > .titles > h1 {
+      font-size: 1rem;
+      max-width: 14rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-device) {
+  .header-container {
+    .title-container {
+      width: 100%;
+
+      .titles {
+        margin-left: 0.25rem;
+
+        h1 {
+          max-width: 10rem;
+        }
+
+        h2 {
+          font-size: 0.75rem;
+        }
+      }
+    }
+
+    .selectors-container {
+      display: none;
+    }
+  }
+
+  .language-dropdown-container {
+    width: fit-content;
+  }
+}

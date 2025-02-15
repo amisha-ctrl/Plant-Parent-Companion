@@ -1,0 +1,47 @@
+@import 'variables.scss';
+
+.measure-options-container {
+  display: flex;
+  width: inherit;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  .buttons-select-wrapper {
+    display: flex;
+    align-items: center;
+
+    button {
+      margin-left: 4px;
+      width: 32px;
+      height: 32px;
+    }
+
+    span {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+
+    select {
+      height: $measure-content-button-height;
+    }
+
+    .selected {
+      border: 2px solid #187d29;
+      background-color: #fff;
+    }
+  }
+
+  p {
+    margin: 0.5rem 0 0 0;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 20.4px;
+  }
+
+  hr {
+    width: inherit;
+    margin-top: 0;
+  }
+}

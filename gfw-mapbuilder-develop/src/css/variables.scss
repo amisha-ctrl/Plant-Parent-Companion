@@ -1,0 +1,47 @@
+/* COLORS
+============================================= */
+
+$white: #fff;
+$base-yellow: rgb(240, 171, 0);
+$light-light-grey: #eee;
+$light-grey: rgb(85, 85, 85);
+$medium-dark-grey: #aaa;
+$dark-grey: #555;
+$black: black;
+$header-color: rgba(255, 255, 255, 0.5);
+$dropdown-border: #ddd;
+$modal-border: #e5e5df;
+
+/* FEATURE DIMENSIONS
+============================================= */
+
+$header-height: 50px;
+$map-widget-square: 38px;
+$map-widget-svg: 21px;
+$measure-content-button-height: 1.85rem;
+$footer-height: 1.5rem;
+
+%input-fields {
+  width: 2.75rem;
+  height: 1.5rem;
+}
+
+/* FONTS
+============================================= */
+
+$fira-sans: 'Fira Sans', sans-serif;
+
+/* MEDIA QUERY, DEVICE WIDTH
+============================================= */
+
+$mobile-device: 475px;
+$tablet-device: 768px;
+$laptop-device: 800px;
+
+/* MISC GLOBAL CLASSES
+============================================= */
+
+.hide {
+  // * NOTE - to be conditionally added/removed across the app, as needed!
+  display: none;
+}

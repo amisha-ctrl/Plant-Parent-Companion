@@ -1,0 +1,133 @@
+.aoi-dashboard {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  .aoi-wrapper {
+    width: 100%;
+    display: grid;
+    grid-gap: 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 90%;
+  }
+  .aoi-section {
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    width: 95%;
+    border: 1px solid #97be32;
+    border-radius: 2px;
+    padding: 10px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: auto 1fr;
+    .info-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      .controls {
+        align-items: start;
+      }
+    }
+    .area-name {
+      text-align: left;
+      color: #333;
+      font-size: 1.125rem;
+    }
+    .date {
+      text-align: left;
+      margin-top: 2px;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+    .alert-section {
+      margin-top: 10px;
+      gap: 10px;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+    .title {
+      font-size: 0.9rem;
+    }
+    .glad {
+      color: #f69;
+      font-size: 0.8rem;
+      margin-top: 5px;
+    }
+    .viirs {
+      font-size: 0.8rem;
+      color: #f14600;
+      margin-top: 5px;
+    }
+    .map,
+    .edit,
+    .print {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 8rem;
+      min-height: 1.6rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      border: none;
+      text-transform: uppercase;
+      margin: 0 auto;
+    }
+    .map-btns {
+      display: flex;
+      flex-direction: column;
+      .map {
+        background-color: #f0ab00;
+        color: white;
+      }
+      .edit {
+        margin-top: 10px;
+        color: #f0ab00;
+        background-color: white;
+        border: 2px solid;
+      }
+      .print {
+        margin-top: 10px;
+        color: #f0ab00;
+        background-color: white;
+        border: 2px solid;
+      }
+    }
+  }
+  .back-btn,
+  .next-btn {
+    border-radius: 2px;
+    font-size: 0.8rem;
+    margin: 0 auto;
+    border: none;
+    background-color: #7d7c77;
+    color: white;
+    padding: 5px;
+    width: 50px;
+  }
+  .next-btn {
+    margin-left: 5px;
+  }
+  .miniMap {
+    border: 0.5px dotted papayawhip;
+    background-color: papayawhip;
+  }
+  .map-section {
+    align-self: center;
+  }
+  .no-areas-section {
+    display: grid;
+    justify-content: center;
+    .area-alerts-img {
+      background: url('../images/areas-icon.png') no-repeat center;
+      background-size: contain;
+      height: 220px;
+    }
+    .no-areas-subsection {
+      text-align: center;
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+  }
+}
