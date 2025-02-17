@@ -1,3 +1,25 @@
+document.getElementById("dropdown-btn").onclick = function() {
+    var dropdown = document.getElementById("dropdown-content");
+    if (dropdown.classList.contains("show")) {
+        dropdown.classList.remove("show");
+    } else {
+        dropdown.classList.add("show");
+    }
+}
+
+  // Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('#dropdown-btn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+        }
+      }
+    }
+}
+
 document.getElementById('open-about').onclick = function(event){
     event.preventDefault();
     document.getElementById('about-modal').style.display="block";
