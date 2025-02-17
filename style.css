@@ -248,6 +248,56 @@ nav{
     color: white;
 }
 
+.dropbtn {
+    text-decoration: none;
+    color: #468585;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    width: 10vw;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    text-align: center;
+    width: 100%;
+    margin-top: 8vh;
+    z-index: 3;
+}
+
+.drop-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 2vw;
+}
+
+.dropdown-content a {
+    color: #468585;
+    display: block;
+    text-decoration: none;
+    font-size: 2vw;
+    font-family: "Instrument Sans", serif;
+}
+
+.show {
+    display: block;
+}
+
 #services{
     width: 100%;
     padding: 5%;
